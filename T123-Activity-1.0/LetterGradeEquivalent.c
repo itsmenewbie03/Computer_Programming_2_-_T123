@@ -26,7 +26,7 @@ int main(){
     {
         printf("Your letter grade is C.");
     }
-    else if (grade <= 59 && grade > 50)
+    else if (grade <= 59 && grade >= 50)
     {
         printf("Your letter grade is D.");
     }
