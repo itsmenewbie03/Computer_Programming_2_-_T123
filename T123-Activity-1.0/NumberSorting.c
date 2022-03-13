@@ -35,7 +35,7 @@ int main(){
         int temp;
         printf("[%d] Input Number: ",i);
         scanf("\n%d",&temp);
-        if(temp < 0){
+        if(temp <= 0){
             printf("This is an invalid input. Try Again.\n");
             --i;
             continue;
