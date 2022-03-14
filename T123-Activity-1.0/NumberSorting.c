@@ -23,9 +23,9 @@ void bubbleSort(int *arr,int size){
     {
         if(arr[i] < arr[i+1]){
             swap(&arr[i],&arr[i+1]);
-            bubbleSort(arr,size-1);
         }
         i++;
+        bubbleSort(arr,size-1);
     }
 }
 int main(){
@@ -35,7 +35,7 @@ int main(){
         int temp;
         printf("[%d] Input Number: ",i);
         scanf("\n%d",&temp);
-        if(temp < 0){
+        if(temp <= 0){
             printf("This is an invalid input. Try Again.\n");
             --i;
             continue;
