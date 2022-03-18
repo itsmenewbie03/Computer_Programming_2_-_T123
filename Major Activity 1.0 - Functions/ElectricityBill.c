@@ -25,7 +25,7 @@ float computeCharge(int unitConsumed, float chargePerUnit)
 {
     float charge;
     charge = unitConsumed * chargePerUnit;
-    
+
     return charge;
 }
 float computeSurcharge(int charge)
@@ -37,7 +37,8 @@ float computeSurcharge(int charge)
     }
     return surcharge;
 }
-float computeTotalBill(float charge, float surCharge){
+float computeTotalBill(float charge, float surCharge)
+{
     float total;
     total = charge + surCharge;
     return total;
@@ -53,12 +54,20 @@ int main()
     chargePerUnit = computeChargePerUnit(unitConsumed);
     charge = computeCharge(unitConsumed, chargePerUnit);
     surCharge = computeSurcharge(charge);
-    total = computeTotalBill(charge,surCharge);
-    printf("[Electricity Bill]\n");
-    printf("Customer ID#                    :%d\n", customerId);
-    printf("unit Consumed                   :%d\n", unitConsumed);
-    printf("unit Charges @P. %.2f per unit  :P %.2f\n", chargePerUnit, charge);
-    printf("Surcharge Amount                :P %.2f\n", surCharge);
-    printf("Total Customer Bill             :P %.2f", total);
-    return 0;
+    total = computeTotalBill(charge, surCharge);
+    if (total > 100)
+    {
+        printf("[Electricity Bill]\n");
+        printf("Customer ID#                    :%d\n", customerId);
+        printf("unit Consumed                   :%d\n", unitConsumed);
+        printf("unit Charges @P. %.2f per unit  :P %.2f\n", chargePerUnit, charge);
+        printf("Surcharge Amount                :P %.2f\n", surCharge);
+        printf("Total Customer Bill             :P %.2f", total);
+        return 0;
+    }
+    else
+    {
+        printf("Total bill must be P 100 atleast.");
+        return -1;
+    }
 }
