@@ -5,7 +5,7 @@ int main(){
     {
         int temp;
         printf("[%d] Input Number: ",i);
-        scanf("\n%d",&temp);
+        scanf("%d",&temp);
         if(temp > 0){
             if(temp > max){
                 max = temp;

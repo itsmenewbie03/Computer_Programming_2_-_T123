@@ -26,7 +26,7 @@ int main(){
     for(int i = 0;i<5;i++){
         float temp;
         printf("[%d] Enter Grade: ",i+1);
-        scanf("\n%f",&temp);
+        scanf("%f",&temp);
         if(temp > 100 || temp < 0){
             printf("Invalid Grade!\n");
             --i;

@@ -6,7 +6,7 @@ int main()
     while (1)
     {
         printf("[%d] Input Number: ", i);
-        scanf("\n%d", &temp);
+        scanf("%d", &temp);
         if (temp < 0)
         {
             continue;
