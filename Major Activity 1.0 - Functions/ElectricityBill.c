@@ -25,12 +25,11 @@ float computeCharge(int unitConsumed, float chargePerUnit)
 {
     float charge;
     charge = unitConsumed * chargePerUnit;
-
     return charge;
 }
-float computeSurcharge(int charge)
+float computeSurcharge(float charge)
 {
-    float surcharge = 0;
+    float surcharge = 0.00;
     if (charge > 400)
     {
         surcharge = charge * 0.1;
