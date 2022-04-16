@@ -24,7 +24,7 @@ int main()
                 }
                 else
                 {
-                    printf("%c", forwardCharacter, forwardCounter);
+                    printf("%c", forwardCharacter);
                     forwardCounter++;
                 }
             }
