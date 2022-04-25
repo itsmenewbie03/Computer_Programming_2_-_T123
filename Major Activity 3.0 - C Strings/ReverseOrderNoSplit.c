@@ -6,6 +6,7 @@ int main()
     char string[100];
     printf("Enter any string: ");
     scanf("%[^\n]s", string);
+    printf("Reverse ordered words\n");
     int lastIndex = strlen(string) - 1;
     while (lastIndex >= 0)
     {
@@ -23,7 +24,7 @@ int main()
                 }
                 else
                 {
-                    printf("%c", forwardCharacter, forwardCounter);
+                    printf("%c", forwardCharacter);
                     forwardCounter++;
                 }
             }
