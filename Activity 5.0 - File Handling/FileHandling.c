@@ -17,4 +17,5 @@ int main(){
         fprintf(file,"%s\n",words[i][0]);
     }
     fclose(file);
+    return 0;
 }
