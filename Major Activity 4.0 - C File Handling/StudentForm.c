@@ -1,7 +1,5 @@
 #include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
-#include <stdarg.h>
 
 float computeTotalGrade(float[], int);
 float computeAverage(float, int);
@@ -61,4 +59,5 @@ void createNewRecord(int index)
     totalGrade = computeTotalGrade(grades, count);
     averageGrade = computeAverage(totalGrade, count);
     fprintf(sFile, "Student Name: %s\nStudent ID Number: %d\nMath Grade: %.2f\nScience Grade: %.2f\nEnglish Grade: %.2f\nTotal Grade: %.2f\nAverage Grade: %.2f", sName, sID, mathGrade, sciGrade, engGrade, totalGrade, averageGrade);
+    fclose(sFile);
 }
