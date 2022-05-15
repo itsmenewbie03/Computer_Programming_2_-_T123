@@ -22,7 +22,7 @@ int main()
             i++;
         }
     }
-    mean = rsum / vcount;
+    mean = (float)rsum / (float)vcount;
     printf("Average = %.2f.", mean);
     return 0;
 }
